@@ -4,6 +4,7 @@ import {
     Spacer,
     Image,
     VStack,
+    HStack,
     Heading,
     Text,
     Box,
