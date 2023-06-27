@@ -12,6 +12,9 @@ import {
 // Asset imports
 import logo from "../icons_assets/Logo.png";
 
+// CSS imports
+import "./Footer.css";
+
 export default function Footer() {
   const doormatNavHeaders = [
     {
@@ -56,12 +59,12 @@ export default function Footer() {
   ];
   return (
     <>
-      <Flex alignItems="top">
+      <Flex alignItems="top" className="Footer">
         <Spacer />
         <Image src={logo} alt="Little Lemon Logo" objectFit="contain" />
         <Spacer />
-        <Flex gridGap={100}>
-          <VStack>
+        <Flex gridGap={100} className="Footer">
+          <VStack alignItems="start">
             <Heading>Doormat Navigation</Heading>
             {doormatNavHeaders.map((doormatNavHeader, index) => (
               <Link key={index} href={doormatNavHeader.url}>
@@ -69,13 +72,13 @@ export default function Footer() {
               </Link>
             ))}
           </VStack>
-          <VStack>
+          <VStack alignItems="start">
             <Heading>Contact</Heading>
             {contactDetails.map((contactDetail, index) => (
               <Text key={index}>{contactDetail.info}</Text>
             ))}
           </VStack>
-          <VStack>
+          <VStack alignItems="start">
             <Heading>Social Media Links</Heading>
             {socials.map((social, index) => (
               <Link key={index} href={social.url}>

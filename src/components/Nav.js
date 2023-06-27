@@ -1,4 +1,8 @@
+// Package imports
 import { HStack } from "@chakra-ui/react";
+
+// CSS imports
+import "./Nav.css";
 
 export default function Nav() {
   const navHeaders = [
@@ -30,7 +34,7 @@ export default function Nav() {
 
   return (
     <nav>
-      <HStack alignItems="center" spacing={100}>
+      <HStack alignItems="center" className="Nav">
         {navHeaders.map((navHeader, index) => (
           <a key={index} href={navHeader.url}>
             {navHeader.name}
