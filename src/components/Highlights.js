@@ -46,7 +46,13 @@ export default function Highlights() {
     return (
         <Flex>
             <VStack>
-                <HStack></HStack>
+                <HStack>
+                    <Heading as="h1">This weeks specials!</Heading>
+                    <Spacer />
+                    <Button colorScheme="yellow" size="lg">
+                        Online Menu
+                    </Button>
+                </HStack>
                 <HStack>
                     {thisWeeksSpecials.map((thisWeekSpecial, index)=><Card key={index} dish={thisWeekSpecial} />)}
                 </HStack>
