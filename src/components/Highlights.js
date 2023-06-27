@@ -47,7 +47,7 @@ export default function Highlights() {
             <VStack>
                 <HStack></HStack>
                 <HStack>
-                    {thisWeeksSpecials.map((thisWeekSpecial, index)=><Card key={index} food={thisWeekSpecial} />)}
+                    {thisWeeksSpecials.map((thisWeekSpecial, index)=><Card key={index} dish={thisWeekSpecial} />)}
                 </HStack>
             </VStack>
         </Flex>

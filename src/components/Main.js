@@ -16,7 +16,7 @@ export default function main() {
   return (
     <Flex direction="column">
       <Hero />
-      {/* <Highlights /> */}
+      <Highlights />
       {/* <Testimonials /> */}
       {/* <About /> */}
     </Flex>
