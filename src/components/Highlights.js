@@ -24,12 +24,22 @@ import "./Highlights.css";
 export default function Highlights() {
     const thisWeeksSpecials = [
         {
-            name: "Greek salad",
+            name: "Greek Salad",
             price: "$12.99",
             image: greekSaladPic,
-            description: "
-
-
+            description: "The famous greek salad of cripsy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons"
+        },
+        {
+            name: "Bruchetta",
+            price: "$5.99",
+            image: bruchettaPic,
+            description: "Our Bruchetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
+        },
+        {
+            name: "Lemon Dessert",
+            price: "$5.00",
+            image: lemonDessertPic,
+            description: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
         },
     ]
     return (
@@ -37,9 +47,7 @@ export default function Highlights() {
             <VStack>
                 <HStack></HStack>
                 <HStack>
-                    <Card food={greekSalad} />
-                    <Card food={bruchetta}/>
-                    <Card food={lemonDessert} />
+                    {thisWeeksSpecials.map((thisWeekSpecial, index)=><Card key={index} food={thisWeekSpecial} />)}
                 </HStack>
             </VStack>
         </Flex>
