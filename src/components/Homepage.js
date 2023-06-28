@@ -10,15 +10,15 @@ import About from "./About";
 // Asset imports
 
 // CSS imports
-import "./Main.css";
+import "./Homepage.css";
 
 export default function main() {
   return (
     <Flex direction="column">
       <Hero />
       <Highlights />
-      {/* <Testimonials /> */}
-      {/* <About /> */}
+      <Testimonials />
+      <About />
     </Flex>
   );
 }
