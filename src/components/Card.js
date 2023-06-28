@@ -22,7 +22,7 @@ import "./Card.css";
 export default function Card(props) {
     return (
         <Box borderRadius="lg" w="260px" bg="lightgrey" h="500px">
-            <VStack align="start">
+            <VStack>
                 <Image src={props.dish.image} alt={props.dish.name} w="100%" maxH="160px" objectFit="cover"/>
                 <Flex>
                     <Heading as="h2">{props.dish.name}</Heading>
