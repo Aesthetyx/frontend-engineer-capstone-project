@@ -52,14 +52,14 @@ export default function Testimonials() {
     ]
     return (
         <Flex>
-            <Spacer />
             <VStack>
                 <Text>Testimonials</Text>
                 <HStack>
+                    <Spacer />
                     {ratings.map((rating, index)=><Rating key={index} info={rating} />)}
+                    <Spacer />
                 </HStack>
             </VStack>
-            <Spacer />
         </Flex>
     )
 }
