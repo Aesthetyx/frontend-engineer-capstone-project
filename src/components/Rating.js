@@ -19,7 +19,7 @@ export default function Rating(props) {
     return (
         <Flex borderRadius="lg" bg="#EDEFEE" w="200px" h="300px" direction="column">
             <Flex>
-                {Array(5).fill("").map((_, index)->(<StarIcon key={index} color={index < props.info.stars? "yellow" : "grey"}/>))}
+                {Array(5).fill("").map((_, index)=>(<StarIcon key={index} color={index < props.info.stars ? "yellow" : "grey"}/>))}
             </Flex>
             <Flex align="start">
                 <Image src={props.info.image} alt={props.info.name} boxSize="80px"/>
