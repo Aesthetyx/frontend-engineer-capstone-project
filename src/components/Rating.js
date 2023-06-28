@@ -9,8 +9,8 @@ import {
     Text,
     Box,
     Button,
-    StarIcon,
   } from "@chakra-ui/react";
+  import { StarIcon } from "@chakra-ui/icons";
 
 // CSS imports
 import "./Rating.css";
