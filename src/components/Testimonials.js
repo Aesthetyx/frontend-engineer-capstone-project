@@ -54,7 +54,7 @@ export default function Testimonials() {
         <Flex>
             <Spacer />
             <VStack>
-                <Text>Testimonials</TExt>
+                <Text>Testimonials</Text>
                 <HStack>
                     {ratings.map((rating, index)=><Rating key={index} info={rating} />)}
                 </HStack>

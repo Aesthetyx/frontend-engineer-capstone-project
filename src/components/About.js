@@ -30,10 +30,11 @@ export default function About(){
                     <Heading as="h2" color="#ffffff">
                         Chicago
                     </Heading>
-                <Box flex="1" maxW="200px">
-                    <Text color="#ffffff">
-                        We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist
-                    </Text>
+                    <Box flex="1" maxW="200px">
+                        <Text color="#ffffff">
+                            We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist
+                        </Text>
+                    </Box>
                 </Box>
             </VStack>
             <Spacer />
