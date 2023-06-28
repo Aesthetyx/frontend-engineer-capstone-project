@@ -20,7 +20,7 @@ export default function Rating(props) {
             <VStack>
                 <Flex>{props.info.stars} stars</Flex>
                 <Flex>
-                    <Image src={props.info.image} alt={props.info.name}/>
+                    <Image src={props.info.image} alt={props.info.name} boxSize="64px"/>
                     <Text>{props.info.name}</Text>
                 </Flex>
                 <Box>
