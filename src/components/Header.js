@@ -1,5 +1,5 @@
 // Package imports
-import { Flex, Spacer, Image } from "@chakra-ui/react";
+import { Flex, Spacer, Image, VStack} from "@chakra-ui/react";
 
 // Component imports
 import Nav from "./Nav";
@@ -12,11 +12,15 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <Flex className="Header">
+    <Flex className="Header" h="100px">
       <Spacer />
-      <Image src={logo} alt="Little Lemon Logo" />
+      <Image src={logo} alt="Little Lemon Logo" objectFit="contain"/>
       <Spacer />
-      <Nav />
+      <VStack>
+        <Spacer />
+        <Nav />
+        <Spacer />
+      </VStack>
       <Spacer />
     </Flex>
   );

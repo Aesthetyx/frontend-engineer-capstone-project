@@ -25,7 +25,7 @@ export default function About(){
             <HStack>
                 <VStack>
                     <Box alignItems="start">
-                        <Heading as="h1" color="#f4ce14">
+                        <Heading as="h1" color="#000000">
                             Little Lemon
                         </Heading>
                         <Heading as="h2" color="#000000">
