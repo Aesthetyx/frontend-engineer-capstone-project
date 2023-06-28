@@ -39,8 +39,8 @@ export default function About(){
                     </Box>
                 </VStack>
                 <Spacer />
-                <Image src={marioAndAdrianA} alt="Mario and Adrian A" />
-                <Image src={marioAndAdrianB} alt="Mario and Adrian B" />
+                <Image src={marioAndAdrianA} alt="Mario and Adrian A" maxW="300px"/>
+                <Image src={marioAndAdrianB} alt="Mario and Adrian B" maxW="300px"/>
                 <Spacer />
             </HStack>
         </Flex>
