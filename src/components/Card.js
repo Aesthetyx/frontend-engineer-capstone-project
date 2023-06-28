@@ -24,11 +24,11 @@ export default function Card(props) {
         <Box borderRadius="lg" w="260px" bg="lightgrey" h="500px">
             <VStack align="start">
                 <Image src={props.dish.image} alt={props.dish.name} w="100%" maxH="160px" objectFit="cover"/>
-                <HStack>
+                <Flex>
                     <Heading as="h2">{props.dish.name}</Heading>
                     <Spacer />
                     <Heading as="h2" color="orange">{props.dish.price}</Heading>
-                </HStack>
+                </Flex>
                 <Box w="90%" h="160px">
                     <Text>{props.dish.description}</Text>
                 </Box>
