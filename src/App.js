@@ -1,17 +1,23 @@
 import "./App.css";
-import { Flex, Spacer } from "@chakra-ui/react";
 import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Homepage from "./components/Homepage";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
+import { AlertProvider } from "./context/alertContext";
+import Alert from "./components/Alert";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Homepage />
-      <Footer />
-    </>
+    <ChakraProvider>
+      <AlertProvider>
+        <main>
+          <Header />
+          <Main />
+          <Footer />
+          <Alert />
+        </main>
+      </AlertProvider>
+    </ChakraProvider>
   );
 }
 

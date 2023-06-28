@@ -1,5 +1,6 @@
 // Package imports
 import { HStack } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 // CSS imports
 import "./Nav.css";
@@ -8,7 +9,7 @@ export default function Nav() {
   const navHeaders = [
     {
       name: "Home",
-      url: "",
+      url: "/",
     },
     {
       name: "About",
@@ -20,7 +21,7 @@ export default function Nav() {
     },
     {
       name: "Reservations",
-      url: "/reservations",
+      url: "/booking-page",
     },
     {
       name: "Order Online",
@@ -36,9 +37,9 @@ export default function Nav() {
     <nav>
       <HStack alignItems="center" className="Nav">
         {navHeaders.map((navHeader, index) => (
-          <a key={index} href={navHeader.url}>
+          <Link key={index} to={navHeader.url}>
             {navHeader.name}
-          </a>
+          </Link>
         ))}
       </HStack>
     </nav>

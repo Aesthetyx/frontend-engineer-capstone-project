@@ -1,14 +1,6 @@
 // Package imports
-import {
-  Flex,
-  Spacer,
-  Link,
-  Box,
-  VStack,
-  Text,
-  Heading,
-  Image,
-} from "@chakra-ui/react";
+import { Flex, Spacer, VStack, Text, Heading, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 // Asset imports
 import logo from "../icons_assets/Logo.png";
@@ -20,7 +12,7 @@ export default function Footer() {
   const doormatNavHeaders = [
     {
       name: "Home",
-      url: "",
+      url: "/",
     },
     {
       name: "About",
@@ -32,7 +24,7 @@ export default function Footer() {
     },
     {
       name: "Reservations",
-      url: "/reservations",
+      url: "/booking-page",
     },
     {
       name: "Order Online",
@@ -59,35 +51,35 @@ export default function Footer() {
     },
   ];
   return (
-      <Flex className="Footer" bg="#FBDABB">
-        <Spacer />
-        <Image src={logo} alt="Little Lemon Logo" objectFit="contain"/>
-        <Spacer />
-        <Flex gridGap={100} className="Footer">
-          <VStack alignItems="start">
-            <Heading>Doormat Navigation</Heading>
-            {doormatNavHeaders.map((doormatNavHeader, index) => (
-              <Link key={index} href={doormatNavHeader.url}>
-                {doormatNavHeader.name}
-              </Link>
-            ))}
-          </VStack>
-          <VStack alignItems="start">
-            <Heading>Contact</Heading>
-            {contactDetails.map((contactDetail, index) => (
-              <Text key={index}>{contactDetail.info}</Text>
-            ))}
-          </VStack>
-          <VStack alignItems="start">
-            <Heading>Social Media Links</Heading>
-            {socials.map((social, index) => (
-              <Link key={index} href={social.url}>
-                {social.name}
-              </Link>
-            ))}
-          </VStack>
-        </Flex>
-        <Spacer />
+    <Flex className="Footer" bg="#FBDABB">
+      <Spacer />
+      <Image src={logo} alt="Little Lemon Logo" objectFit="contain" />
+      <Spacer />
+      <Flex gridGap={100} className="Footer">
+        <VStack alignItems="start">
+          <Heading>Doormat Navigation</Heading>
+          {doormatNavHeaders.map((doormatNavHeader, index) => (
+            <Link key={index} to={doormatNavHeader.url}>
+              {doormatNavHeader.name}
+            </Link>
+          ))}
+        </VStack>
+        <VStack alignItems="start">
+          <Heading>Contact</Heading>
+          {contactDetails.map((contactDetail, index) => (
+            <Text key={index}>{contactDetail.info}</Text>
+          ))}
+        </VStack>
+        <VStack alignItems="start">
+          <Heading>Social Media Links</Heading>
+          {socials.map((social, index) => (
+            <Link key={index} href={social.url}>
+              {social.name}
+            </Link>
+          ))}
+        </VStack>
       </Flex>
+      <Spacer />
+    </Flex>
   );
 }

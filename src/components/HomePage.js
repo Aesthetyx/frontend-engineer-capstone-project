@@ -1,5 +1,5 @@
 // Package imports
-import { HStack, VStack, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 
 // Component imports
 import Hero from "./Hero";
@@ -10,7 +10,7 @@ import About from "./About";
 // Asset imports
 
 // CSS imports
-import "./Homepage.css";
+import "./HomePage.css";
 
 export default function main() {
   return (
