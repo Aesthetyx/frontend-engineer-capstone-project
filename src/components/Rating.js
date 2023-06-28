@@ -16,7 +16,7 @@ import "./Rating.css";
 
 export default function Rating(props) {
     return (
-        <Box borderRadius="lg">
+        <Box borderRadius="lg" bg="grey">
             <VStack>
                 <Flex>{props.info.stars} stars</Flex>
                 <Flex>
