@@ -27,7 +27,7 @@ export default function Card(props) {
                 <HStack>
                     <Heading as="h2">{props.dish.name}</Heading>
                     <Spacer />
-                    <Heading as="h2" color="orange" justify="end">{props.dish.price}</Heading>
+                    <Heading as="h2" color="orange">{props.dish.price}</Heading>
                 </HStack>
                 <Box w="90%" h="160px">
                     <Text>{props.dish.description}</Text>
