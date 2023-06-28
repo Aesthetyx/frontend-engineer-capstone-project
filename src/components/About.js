@@ -28,11 +28,11 @@ export default function About(){
                         <Heading as="h1" color="#f4ce14">
                             Little Lemon
                         </Heading>
-                        <Heading as="h2" color="#ffffff">
+                        <Heading as="h2" color="#000000">
                             Chicago
                         </Heading>
                         <Box flex="1" maxW="200px">
-                            <Text color="#ffffff">
+                            <Text color="#000000">
                                 We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist
                             </Text>
                         </Box>
