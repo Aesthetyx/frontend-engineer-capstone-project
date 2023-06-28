@@ -23,7 +23,7 @@ export default function Card(props) {
     return (
         <Box borderRadius="lg" w="300px" bg="grey" h="500px">
             <VStack>
-                <Image src={props.dish.image} alt={props.dish.name} w="100%" h="40%" objectFit="cover"/>
+                <Image src={props.dish.image} alt={props.dish.name} w="100%" maxH="40%" objectFit="cover"/>
                 <HStack>
                     <Heading as="h2">{props.dish.name}</Heading>
                     <Spacer />
