@@ -18,18 +18,14 @@ export default function Rating(props) {
     return (
         <Box borderRadius="lg">
             <VStack>
-                <Flex></Flex>
-                <Image src={props.dish.image} alt={props.dish.name}/>
-                <HStack>
-                    <Heading as="h2">{props.dish.name}</Heading>
-                    <Spacer />
-                    <Heading as="h2">{props.dish.price}</Heading>
-                </HStack>
-                <Text>{props.dish.description}</Text>
-                <HStack>
-                    <Text>Order a delivery</Text>
-                    <Image src={dishIcon}/>
-                </HStack>
+                <Flex>{props.info.stars} stars</Flex>
+                <Flex>
+                    <Image src={props.info.image} alt={props.info.name}/>
+                    <Text>{props.info.name}</Text>
+                </Flex>
+                <Box>
+                    <Text>{props.info.review}</Text>
+                </Box>
             </VStack>
         </Box>
     )
