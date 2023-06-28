@@ -22,14 +22,16 @@ import "./Card.css";
 export default function Card(props) {
     return (
         <Box borderRadius="lg" w="300px" bg="lightgrey" h="500px">
-            <VStack>
-                <Image src={props.dish.image} alt={props.dish.name} w="100%" maxH="40%" objectFit="cover"/>
+            <VStack align="start">
+                <Image src={props.dish.image} alt={props.dish.name} w="100%" maxH="160px" objectFit="cover"/>
                 <HStack>
                     <Heading as="h2">{props.dish.name}</Heading>
                     <Spacer />
-                    <Heading as="h2">{props.dish.price}</Heading>
+                    <Heading as="h2" color="orange">{props.dish.price}</Heading>
                 </HStack>
-                <Text>{props.dish.description}</Text>
+                <Box w="90%" h="160px">
+                    <Text>{props.dish.description}</Text>
+                </Box>
                 <HStack>
                     <Text>Order a delivery</Text>
                     <Image src={dishIcon}/>
