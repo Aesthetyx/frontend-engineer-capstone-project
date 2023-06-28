@@ -18,7 +18,7 @@ export default function Rating(props) {
     return (
         <Box borderRadius="lg">
             <VStack>
-                
+                <Flex></Flex>
                 <Image src={props.dish.image} alt={props.dish.name}/>
                 <HStack>
                     <Heading as="h2">{props.dish.name}</Heading>
