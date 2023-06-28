@@ -20,7 +20,7 @@ import "./About.css";
 
 export default function About(){
     return (
-        <Flex>
+        <Flex h="300px">
             <Spacer />
             <HStack>
                 <VStack>
