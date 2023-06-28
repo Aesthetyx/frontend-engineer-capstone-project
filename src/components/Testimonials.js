@@ -51,7 +51,7 @@ export default function Testimonials() {
         }
     ]
     return (
-        <Flex bg="#F4CE14">
+        <Flex bg="#EE9972">
             <Spacer />
             <VStack>
                 <Heading as="h1">Testimonials</Heading>

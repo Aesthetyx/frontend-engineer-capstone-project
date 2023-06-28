@@ -59,7 +59,7 @@ export default function Footer() {
   ];
   return (
     <>
-      <Flex alignItems="top" className="Footer" bg="#495e57">
+      <Flex alignItems="top" className="Footer" bg="#F4CE14">
         <Spacer />
         <Image src={logo} alt="Little Lemon Logo" objectFit="contain" />
         <Spacer />
