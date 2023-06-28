@@ -24,7 +24,32 @@ import randomUser4 from "../icons_assets/randomUser4.jpeg";
 import "./Testimonials.css";
 
 export default function Testimonials() {
-    const ratings
+    const ratings = [
+        {
+            name: "Mary",
+            stars: 5,
+            image: randomUser1,
+            review: "Splendid decor and atmosphere, and commendable attitudes shown by staff"
+        },
+        {
+            name: "Jon",
+            stars: 4,
+            image: randomUser2,
+            review: "Superb mediterranean dishes"
+        },
+        {
+            name: "Brenda",
+            stars: 4,
+            image: randomUser3,
+            review: "I had a wonderful dinner at Little Lemon, would definitely recommend"
+        },
+        {
+            name: "Peter",
+            stars: 3,
+            image: randomUser4,
+            review: "Food was great but reserving a table online was tough"
+        }
+    ]
     return (
         <Flex>
             <VStack>
