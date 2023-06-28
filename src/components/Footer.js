@@ -3,6 +3,7 @@ import {
   Flex,
   Spacer,
   Link,
+  Box,
   VStack,
   Text,
   Heading,
@@ -58,10 +59,9 @@ export default function Footer() {
     },
   ];
   return (
-    <>
-      <Flex alignItems="top" className="Footer" bg="#F4CE14">
+      <Flex alignItems="top" className="Footer" bg="#FBDABB">
         <Spacer />
-        <Image src={logo} alt="Little Lemon Logo" objectFit="contain" />
+        <Image src={logo} alt="Little Lemon Logo" objectFit="contain"/>
         <Spacer />
         <Flex gridGap={100} className="Footer">
           <VStack alignItems="start">
@@ -89,6 +89,5 @@ export default function Footer() {
         </Flex>
         <Spacer />
       </Flex>
-    </>
   );
 }
