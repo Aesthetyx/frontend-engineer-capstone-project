@@ -53,14 +53,18 @@ export default function Testimonials() {
     return (
         <Flex bg="#EE9972" h="500px">
             <Spacer />
-            <VStack>
-                <Heading as="h1">Testimonials</Heading>
-                <HStack>
-                    <Spacer />
-                    {ratings.map((rating, index)=><Rating key={index} info={rating} />)}
-                    <Spacer />
-                </HStack>
-            </VStack>
+            <HStack>
+                <Spacer />
+                <VStack>
+                    <Heading as="h1">Testimonials</Heading>
+                    <HStack>
+                        <Spacer />
+                        {ratings.map((rating, index)=><Rating key={index} info={rating} />)}
+                        <Spacer />
+                    </HStack>
+                </VStack>
+                <Spacer />
+            </HStack>
             <Spacer />
         </Flex>
     )
