@@ -44,7 +44,7 @@ export default function Highlights() {
         },
     ]
     return (
-        <Flex>
+        <Flex h="600px">
             <Spacer />
             <VStack>
                 <HStack>
