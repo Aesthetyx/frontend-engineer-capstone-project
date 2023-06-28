@@ -52,6 +52,7 @@ export default function Testimonials() {
     ]
     return (
         <Flex>
+            <Spacer />
             <VStack>
                 <Heading as="h1">Testimonials</Heading>
                 <HStack>
@@ -60,6 +61,7 @@ export default function Testimonials() {
                     <Spacer />
                 </HStack>
             </VStack>
+            <Spacer />
         </Flex>
     )
 }

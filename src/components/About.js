@@ -21,8 +21,8 @@ import "./About.css";
 export default function About(){
     return (
         <Flex>
+            <Spacer />
             <HStack>
-                <Spacer />
                 <VStack>
                     <Box alignItems="start">
                         <Heading as="h1" color="#f4ce14">
@@ -41,8 +41,8 @@ export default function About(){
                 <Spacer />
                 <Image src={marioAndAdrianA} alt="Mario and Adrian A" maxW="300px"/>
                 <Image src={marioAndAdrianB} alt="Mario and Adrian B" maxW="300px"/>
-                <Spacer />
             </HStack>
+            <Spacer />
         </Flex>
     )
 }
