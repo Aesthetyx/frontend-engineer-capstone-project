@@ -44,9 +44,9 @@ export default function Footer() {
     },
   ];
   const contactDetails = [
-    { name: "Address", info: "Insert address here" },
-    { name: "Phone Number", info: "Insert phone number here" },
-    { name: "Email", info: "Insert email address here" },
+    { name: "Address", info: "123 ABC Road" },
+    { name: "Phone Number", info: "1234-5678" },
+    { name: "Email", info: "little-lemon@gmail.com" },
   ];
   const socials = [
     {
@@ -59,7 +59,7 @@ export default function Footer() {
     },
   ];
   return (
-      <Flex alignItems="top" className="Footer" bg="#FBDABB">
+      <Flex className="Footer" bg="#FBDABB">
         <Spacer />
         <Image src={logo} alt="Little Lemon Logo" objectFit="contain"/>
         <Spacer />
