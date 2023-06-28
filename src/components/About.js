@@ -12,8 +12,20 @@ import {
   } from "@chakra-ui/react";
 
 // Asset imports
-import randomUser1 from "../icons_assets/randomUser1.jpeg";
-import randomUser2 from "../icons_assets/randomUser2.jpeg";
+import marioAndAdrianA from "../icons_assets/Mario\ and\ Adrian\ A.jpg";
+import marioAndAdrianB from "../icons_assets/Mario\ and\ Adrian\ b.jpg";
 
 // CSS imports
-import "./Testimonials.css";
+import "./About.css";
+
+export default function About(){
+    <Flex>
+        <HStack>
+            <VStack>
+                
+            </VStack>
+            <Image src={marioAndAdrianA} alt="Mario and Adrian A" />
+            <Image src={marioAndAdrianB} alt="Mario and Adrian B" />
+        </HStack>
+    </Flex>
+}
