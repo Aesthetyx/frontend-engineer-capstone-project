@@ -21,7 +21,7 @@ import "./Card.css";
 
 export default function Card(props) {
     return (
-        <Box borderRadius="lg" w="300px" bg="grey" h="500px">
+        <Box borderRadius="lg" w="300px" bg="lightgrey" h="500px">
             <VStack>
                 <Image src={props.dish.image} alt={props.dish.name} w="100%" maxH="40%" objectFit="cover"/>
                 <HStack>
