@@ -15,9 +15,10 @@ import {
 import Rating from "./Rating"
 
 // Asset imports
-import greekSaladPic from "../icons_assets/greek\ salad.jpg";
-import bruchettaPic from "../icons_assets/bruchetta.png";
-import lemonDessertPic from "../icons_assets/lemon\ dessert.jpg";
+import randomUser1 from "../icons_assets/randomUser1.jpeg";
+import randomUser2 from "../icons_assets/randomUser2.jpeg";
+import randomUser3 from "../icons_assets/randomUser3.jpeg";
+import randomUser4 from "../icons_assets/randomUser4.jpeg";
 
 // CSS imports
-import "./Highlights.css";
+import "./Testimonials.css";
