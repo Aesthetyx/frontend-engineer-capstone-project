@@ -22,3 +22,17 @@ import randomUser4 from "../icons_assets/randomUser4.jpeg";
 
 // CSS imports
 import "./Testimonials.css";
+
+export default function Testimonials() {
+    const ratings
+    return (
+        <Flex>
+            <VStack>
+                <Text>Testimonials</TExt>
+                <HStack>
+                    {ratings.map((rating, index)=><Rating key={index} info={rating} />)}
+                </HStack>
+            </VStack>
+        </Flex>
+    )
+}
